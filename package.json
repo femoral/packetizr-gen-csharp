@@ -1,0 +1,49 @@
+{
+  "name": "packetizr-gen-csharp",
+  "version": "0.0.1",
+  "description": "packetizr code generation extension for c#",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "check": "prettier --check src/**/*.ts",
+    "coverage": "jest --coverage",
+    "build": "rimraf dist && tsc && npm run copy-assets",
+    "copy-assets": "copyfiles -u 1 ./src/**/*.hbs ./src/**/**/*.hbs dist"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/femoral/packetizr-gen-csharp.git"
+  },
+  "keywords": [
+    "packetizr",
+    "csharp",
+    "c#"
+  ],
+  "author": "Felipe Morales",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/femoral/packetizr-gen-csharp/issues"
+  },
+  "homepage": "https://github.com/femoral/packetizr-gen-csharp#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.8",
+    "@types/rimraf": "^3.0.0",
+    "copyfiles": "^2.4.0",
+    "jest": "^26.5.3",
+    "packetizr": "file:../packetizr/packetizr-0.0.4.tgz",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.4.1",
+    "ts-mockito": "^2.6.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "change-case": "^4.1.1",
+    "handlebars": "^4.7.6"
+  }
+}

@@ -1,0 +1,5 @@
+{{~#if isArray~}}
+model.{{name.pascalCaseName}}.Add(BitConverter.{{bitConverterMethod}}(reader.ReadBytes({{length}}), 0));
+{{~else~}}
+model.{{name.pascalCaseName}} = BitConverter.{{bitConverterMethod}}(reader.ReadBytes({{length}}), 0);
+{{~/if~}}
