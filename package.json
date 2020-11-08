@@ -34,7 +34,7 @@
     "@types/rimraf": "^3.0.0",
     "copyfiles": "^2.4.0",
     "jest": "^26.5.3",
-    "packetizr": "file:../packetizr/packetizr-0.0.4.tgz",
+    "packetizr": "^0.0.4",
     "prettier": "^2.1.2",
     "rimraf": "^3.0.2",
     "ts-jest": "^26.4.1",
